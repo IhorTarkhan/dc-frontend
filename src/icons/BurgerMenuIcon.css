@@ -1,0 +1,60 @@
+.burger {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-main-line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+}
+
+.burger-main-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  top: -10px;
+}
+
+.burger-main-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  top: 10px;
+}
+
+.burger:hover *,
+.burger:hover *::before,
+.burger:hover *::after {
+  box-shadow: 0 0 10px #0ff;
+}
+
+.burger-additional-lines:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

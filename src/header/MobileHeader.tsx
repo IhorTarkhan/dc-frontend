@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./MobileHeader.css";
+import { BurgerMenuIcon } from "../icons/BurgerMenuIcon";
+import { CrossIcon } from "../icons/CrossIcon";
 
 type Props = {
   name: string;
@@ -18,7 +20,6 @@ export const MobileHeader = (props: Props) => {
         }
       >
         <div className={"mobile-header"}>
-          {/* site-header--open */}
           <div className={"mobile-header-title"}>
             <a className={"logo-link"} href={"/"}>
               <div>
@@ -26,14 +27,11 @@ export const MobileHeader = (props: Props) => {
                 <div className={"desktop-description"}>{props.description}</div>
               </div>
             </a>
-            <button
-              className="navigation__toggle-menu"
-              onClick={() => setIsOpen((prev) => !prev)}
-            >
-              <span className="navigation__toggle-line">
-                <span className="visually-hidden">Show menu</span>
-              </span>
-            </button>
+            {isOpen ? (
+              <CrossIcon onClick={() => setIsOpen((prev) => !prev)} />
+            ) : (
+              <BurgerMenuIcon onClick={() => setIsOpen((prev) => !prev)} />
+            )}
           </div>
           <div
             className={
@@ -51,7 +49,7 @@ export const MobileHeader = (props: Props) => {
                 ))}
               </ul>
             </nav>
-            <div>
+            <div className={"mobile-header-info-open-social"}>
               <div>social_networks_wo_likes</div>
               {/*<include src="source/sections/blocks/social_networks_wo_likes.html"></include>*/}
               <div>music_services</div>

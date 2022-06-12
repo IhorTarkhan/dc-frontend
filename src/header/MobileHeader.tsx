@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./MobileHeader.css";
 import { BurgerMenuIcon } from "../icons/BurgerMenuIcon";
 import { CrossIcon } from "../icons/CrossIcon";
+import { SocialNetworks } from "../social/SocialNetworks";
+import { MusicServices } from "../social/MusicServices";
 
 type Props = {
   name: string;
@@ -50,10 +52,8 @@ export const MobileHeader = (props: Props) => {
               </ul>
             </nav>
             <div className={"mobile-header-info-open-social"}>
-              <div>social_networks_wo_likes</div>
-              {/*<include src="source/sections/blocks/social_networks_wo_likes.html"></include>*/}
-              <div>music_services</div>
-              {/*<include src="source/sections/blocks/music_services.html"></include>*/}
+              <SocialNetworks />
+              <MusicServices />
             </div>
           </div>
         </div>

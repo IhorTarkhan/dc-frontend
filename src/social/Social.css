@@ -1,0 +1,40 @@
+.list {
+  display: flex;
+  list-style: none;
+  gap: 13px;
+  margin: 0;
+}
+
+.item {
+  width: 24px;
+  height: 24px;
+}
+
+.item:hover {
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.link {
+  display: block;
+  font-size: 0;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 1200px) {
+  .item {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+}

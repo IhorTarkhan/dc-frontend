@@ -3,6 +3,8 @@ import { DesktopHeader } from "./DesktopHeader";
 import { MobileHeader } from "./MobileHeader";
 
 export const Header = () => {
+  const name = "Darwin`s Cat";
+  const description = "Sci-Fi Rock Band";
   const links = [
     { title: "News", href: "#news" },
     { title: "Music", href: "#music" },
@@ -17,9 +19,8 @@ export const Header = () => {
     return () => window.removeEventListener("resize", updateWidth);
   }, []);
 
-  if (width <= 768) {
-    return <MobileHeader links={links} className={"mobile-header"} />;
-  } else {
-    return <DesktopHeader links={links} />;
+  if (width < 768) {
+    return <MobileHeader name={name} description={description} links={links} />;
   }
+  return <DesktopHeader name={name} description={description} links={links} />;
 };

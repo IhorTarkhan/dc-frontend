@@ -1,57 +1,57 @@
-.header {
+.desktop-header {
   display: flex;
   padding: 12px 0;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo-link {
+.desktop-logo-link {
   color: #fff;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
-.logo-link:visited {
+.desktop-logo-link:visited {
   color: #fff;
 }
 
-.logo-link:hover {
+.desktop-logo-link:hover {
   color: #fff;
 }
 
-.logo {
+.desktop-logo {
   margin-right: 25px;
   width: 65px;
   height: 65px;
 }
 
-.name {
+.desktop-name {
   font-size: 16px;
 }
 
-.description {
+.desktop-description {
   font-size: 12px;
   font-weight: 300;
 }
 
-.menu-list {
+.desktop-menu-list {
   display: flex;
   gap: 48px;
   list-style: none;
   text-align: right;
 }
 
-.menu-item {
+.desktop-menu-item {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
 }
 
-.menu-item:visited {
+.desktop-menu-item:visited {
   color: #fff;
 }
 
-.menu-item:hover {
+.desktop-menu-item:hover {
   text-shadow: 0 0 10px #0ff;
 }

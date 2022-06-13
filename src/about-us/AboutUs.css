@@ -1,0 +1,53 @@
+.about-us {
+  margin-bottom: 25px;
+}
+
+.about-us .title {
+  padding: 0;
+  margin: 12px 0;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.about-us .text {
+  font-size: 16px;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.about-us .read-more {
+  display: inline-block;
+  padding: 5px 20px 6px;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 1;
+  background: none;
+  color: #ffffff;
+  border: solid 3px #ffffff;
+  cursor: pointer;
+}
+
+.about-us .read-more:visited {
+  color: #ffffff;
+}
+
+.about-us .read-more:hover {
+  color: #ffffff;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+@media (min-width: 768px) {
+  .about-us .title {
+    font-size: 6vw;
+  }
+
+  .about-us .text {
+    font-size: 1.5vw;
+    margin-bottom: 32px;
+    max-width: 75%;
+  }
+
+  .about-us .read-more {
+    font-size: 18px;
+  }
+}

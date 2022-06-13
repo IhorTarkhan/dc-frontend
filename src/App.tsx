@@ -16,7 +16,12 @@ export const App = () => {
       <Line1 />
       <AboutUs />
       <Line2 />
+      album
+      <Line2 />
       <Videos />
+      <Line2 />
+      images
+      <Line1 />
       <Footer />
     </>
   );

@@ -16,6 +16,15 @@
   aspect-ratio: 16/9;
 }
 
+.videos .video-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.videos .video-iframe:hover {
+  box-shadow: 0 0 30px #00ffff;
+}
+
 .videos .read-more-wrapper {
   width: 100%;
   display: flex;

@@ -31,14 +31,14 @@ export const Videos = () => {
         {videos.map((video, index) => (
           <div key={"video-" + index} className={"video-item"}>
             <iframe
-              width={"100%"}
-              height={"100%"}
               src={`https://www.youtube.com/embed/${video.youtubeId}`}
-              title={"YouTube video player"}
+              className={"video-iframe"}
+              title={"YouTube video player " + index}
               allow={
                 "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               }
               allowFullScreen
+              frameBorder="0"
             />
           </div>
         ))}

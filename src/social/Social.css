@@ -1,4 +1,4 @@
-.list {
+.social {
   display: flex;
   list-style: none;
   gap: 13px;
@@ -6,35 +6,35 @@
   padding: 0;
 }
 
-.item {
+.social .item {
   width: 24px;
   height: 24px;
 }
 
-.item:hover {
+.social .item:hover {
   border-radius: 50%;
   box-shadow: 0 0 10px #00ffff;
 }
 
-.link {
+.social .link {
   display: block;
   font-size: 0;
   line-height: 1;
   cursor: pointer;
 }
 
-.icon {
+.social .icon {
   width: 24px;
   height: 24px;
 }
 
 @media (min-width: 1200px) {
-  .item {
+  .social .item {
     width: 48px;
     height: 48px;
   }
 
-  .icon {
+  .social .icon {
     width: 48px;
     height: 48px;
   }

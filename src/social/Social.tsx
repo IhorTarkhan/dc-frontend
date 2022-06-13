@@ -7,7 +7,7 @@ type Pops = {
 
 export const Social = (props: Pops) => {
   return (
-    <ul className={"list"}>
+    <ul className={"social"}>
       {props.list.map((n, index) => (
         <li key={`social-networks-${index}`} className={"item"}>
           <a className={"link"} href={n.href}>

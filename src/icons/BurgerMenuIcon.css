@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-.burger-main-line {
+.burger .main-line {
   position: absolute;
   left: 0;
   top: 50%;
@@ -20,7 +20,7 @@
   background-color: #fff;
 }
 
-.burger-main-line::before {
+.burger .main-line::before {
   content: "";
   position: absolute;
   left: 0;
@@ -30,7 +30,7 @@
   top: -10px;
 }
 
-.burger-main-line::after {
+.burger .main-line::after {
   content: "";
   position: absolute;
   left: 0;
@@ -46,7 +46,7 @@
   box-shadow: 0 0 10px #0ff;
 }
 
-.burger-additional-lines:not(:focus):not(:active) {
+.burger .additional-lines:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;

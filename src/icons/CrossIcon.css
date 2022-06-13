@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-.cross-main-line {
+.cross .main-line {
   position: absolute;
   left: 0;
   top: 50%;
@@ -20,7 +20,7 @@
   background-color: transparent;
 }
 
-.cross-main-line::before {
+.cross .main-line::before {
   content: "";
   position: absolute;
   left: 0;
@@ -31,7 +31,7 @@
   transform: rotate(45deg);
 }
 
-.cross-main-line::after {
+.cross .main-line::after {
   content: "";
   position: absolute;
   left: 0;
@@ -48,11 +48,11 @@
   box-shadow: 0 0 10px #0ff;
 }
 
-.cross:hover .cross-main-line {
+.cross:hover .main-line {
   box-shadow: none;
 }
 
-.cross-additional-lines:not(:focus):not(:active) {
+.cross .additional-lines:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;

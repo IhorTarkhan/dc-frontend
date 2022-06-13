@@ -16,6 +16,7 @@ export const MobileHeader = (props: Props) => {
 
   return (
     <>
+      <div style={{ height: "60px" }} />
       <header
         className={
           isOpen ? "mobile-header-wrapper-close" : "mobile-header-wrapper-open"
@@ -54,7 +55,6 @@ export const MobileHeader = (props: Props) => {
           </div>
         </div>
       </header>
-      <div style={{ height: "60px" }} />
     </>
   );
 };

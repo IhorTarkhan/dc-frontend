@@ -2,14 +2,14 @@ import React from "react";
 import "./BurgerMenuIcon.css";
 
 type Props = {
-  onClick: () => void;
+  onClick?: () => void;
 };
 
 export const BurgerMenuIcon = (props: Props) => {
   return (
     <div className={"burger"} onClick={props.onClick}>
-      <span className={"burger-main-line"}>
-        <span className={"burger-additional-lines"}>Show menu</span>
+      <span className={"main-line"}>
+        <span className={"additional-lines"}>Show menu</span>
       </span>
     </div>
   );

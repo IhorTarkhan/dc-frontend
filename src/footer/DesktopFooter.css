@@ -1,0 +1,33 @@
+.desktop-footer {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-footer .element-wrapper {
+  display: flex;
+  width: 300px;
+}
+
+.desktop-footer .left-element-wrapper {
+  justify-content: left;
+  flex-direction: column;
+}
+
+.desktop-footer .center-element-wrapper {
+  justify-content: center;
+}
+
+.desktop-footer .right-element-wrapper {
+  justify-content: right;
+}
+
+.desktop-footer .desktop-name {
+  font-size: 16px;
+}
+
+.desktop-footer .desktop-description {
+  font-size: 12px;
+  font-weight: 300;
+}

@@ -1,0 +1,15 @@
+.mobile-footer {
+  font-size: 16px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-footer .name {
+  font-size: 16px;
+}
+
+.mobile-footer .description {
+  font-size: 12px;
+  font-weight: 300;
+}

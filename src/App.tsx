@@ -1,7 +1,8 @@
 import React from "react";
+import { Header } from "./header/Header";
 import { Line1 } from "./divider/Line1";
 import { Line2 } from "./divider/Line2";
-import { Header } from "./header/Header";
+import { Footer } from "./footer/Footer";
 
 export const App = () => {
   return (
@@ -10,6 +11,7 @@ export const App = () => {
       <Header />
       <Line1 />
       <Line2 />
+      <Footer />
     </>
   );
 };

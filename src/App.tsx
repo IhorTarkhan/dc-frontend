@@ -5,6 +5,7 @@ import { Line2 } from "./divider/Line2";
 import { Footer } from "./footer/Footer";
 import { NewAlbum } from "./new-album/NewAlbum";
 import { AboutUs } from "./about-us/AboutUs";
+import { Videos } from "./videos/Videos";
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
       <Line1 />
       <AboutUs />
       <Line2 />
+      <Videos />
       <Footer />
     </>
   );

@@ -22,7 +22,7 @@ export const MobileHeader = (props: Props) => {
         }
       >
         <div className={"mobile-header"}>
-          <div className={"mobile-header-title"}>
+          <div className={"title"}>
             <a className={"logo-link"} href={"/"}>
               <div>
                 <div className={"desktop-name"}>{props.name}</div>
@@ -35,11 +35,7 @@ export const MobileHeader = (props: Props) => {
               <BurgerMenuIcon onClick={() => setIsOpen((prev) => !prev)} />
             )}
           </div>
-          <div
-            className={
-              isOpen ? "mobile-header-info-open" : "mobile-header-info-close"
-            }
-          >
+          <div className={isOpen ? "info-open" : "info-close"}>
             <nav>
               <ul className={"menu-list"}>
                 {props.links.map((link, index) => (
@@ -51,7 +47,7 @@ export const MobileHeader = (props: Props) => {
                 ))}
               </ul>
             </nav>
-            <div className={"mobile-header-info-open-social"}>
+            <div className={"info-open-social"}>
               <SocialNetworks />
               <MusicServices />
             </div>

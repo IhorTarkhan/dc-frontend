@@ -11,18 +11,18 @@ type Props = {
 export const DesktopHeader = (props: Props) => {
   return (
     <header className={"desktop-header"}>
-      <a className={"desktop-logo-link"} href={"/"}>
-        <img src={logo} className={"desktop-logo"} alt={"Logo"} />
+      <a className={"logo-link"} href={"/"}>
+        <img src={logo} className={"logo"} alt={"Logo"} />
         <div>
-          <div className={"desktop-name"}>{props.name}</div>
-          <div className={"desktop-description"}>{props.description}</div>
+          <div className={"name"}>{props.name}</div>
+          <div className={"description"}>{props.description}</div>
         </div>
       </a>
       <nav>
-        <ul className={"desktop-menu-list"}>
+        <ul className={"menu-list"}>
           {props.links.map((link, index) => (
             <li key={`menu-list-${index}`}>
-              <a className={"desktop-menu-item"} href={link.href}>
+              <a className={"menu-item"} href={link.href}>
                 {link.title}
               </a>
             </li>

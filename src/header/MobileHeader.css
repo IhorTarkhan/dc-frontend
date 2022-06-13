@@ -17,38 +17,38 @@
   padding: 0 70px;
 }
 
-.mobile-header-title {
+.mobile-header .title {
   display: flex;
   padding: 12px 0;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo-link {
+.mobile-header .logo-link {
   color: #fff;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
-.logo-link:visited {
+.mobile-header .logo-link:visited {
   color: #fff;
 }
 
-.logo-link:hover {
+.mobile-header .logo-link:hover {
   color: #fff;
 }
 
-.name {
+.mobile-header .name {
   font-size: 16px;
 }
 
-.description {
+.mobile-header .description {
   font-size: 12px;
   font-weight: 300;
 }
 
-.menu-list {
+.mobile-header .menu-list {
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -56,30 +56,30 @@
   text-align: right;
 }
 
-.menu-item {
+.mobile-header .menu-item {
   color: #fff;
   font-size: 24px;
   text-decoration: none;
 }
 
-.menu-item:visited {
+.mobile-header .menu-item:visited {
   color: #fff;
 }
 
-.menu-item:hover {
+.mobile-header .menu-item:hover {
   text-shadow: 0 0 10px #0ff;
 }
 
-.mobile-header-info-close {
+.mobile-header .info-close {
   display: none;
 }
 
-.mobile-header-info-open {
+.mobile-header .info-open {
   display: flex;
   flex-direction: column;
 }
 
-.mobile-header-info-open-social {
+.mobile-header .info-open-social {
   display: flex;
   flex-direction: column;
   gap: 25px;

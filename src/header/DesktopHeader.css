@@ -5,53 +5,54 @@
   justify-content: space-between;
 }
 
-.desktop-logo-link {
+.desktop-header .logo-link {
   color: #fff;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
-.desktop-logo-link:visited {
+.desktop-header .logo-link:visited {
   color: #fff;
 }
 
-.desktop-logo-link:hover {
+.desktop-header .logo-link:hover {
   color: #fff;
 }
 
-.desktop-logo {
+.desktop-header .logo {
   margin-right: 25px;
   width: 65px;
   height: 65px;
 }
 
-.desktop-name {
+.desktop-header .name {
   font-size: 16px;
 }
 
-.desktop-description {
+.desktop-header .description {
   font-size: 12px;
   font-weight: 300;
 }
 
-.desktop-menu-list {
+.desktop-header .menu-list {
   display: flex;
+  flex-direction: row;
   gap: 48px;
   list-style: none;
   text-align: right;
 }
 
-.desktop-menu-item {
+.desktop-header .menu-item {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
 }
 
-.desktop-menu-item:visited {
+.desktop-header .menu-item:visited {
   color: #fff;
 }
 
-.desktop-menu-item:hover {
+.desktop-header .menu-item:hover {
   text-shadow: 0 0 10px #0ff;
 }

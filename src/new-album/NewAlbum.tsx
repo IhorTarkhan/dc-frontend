@@ -2,6 +2,7 @@ import React from "react";
 import "./NewAlbum.css";
 import { SocialNetworks } from "../social/SocialNetworks";
 import { MusicServices } from "../social/MusicServices";
+import logo from "../img/darwins-cat.png";
 
 export const NewAlbum = () => {
   return (
@@ -10,7 +11,7 @@ export const NewAlbum = () => {
         <img
           className="new-album__image image"
           loading="lazy"
-          src="assets/img/x2/darwins-cat.png"
+          src={logo}
           alt="New Album"
         />
       </div>

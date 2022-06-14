@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AudioPlayer } from "./AudioPlayer";
+import "./MusicPlayer.css";
+import { SongControlLine } from "./SongControlLine";
 
 const SONGS_LIST = [
   {
@@ -33,6 +35,7 @@ const SONGS_LIST = [
     time: "5:23",
   },
 ];
+
 export const MusicPlayer = () => {
   const AUDIO_PLAYER_ID = "audio-player";
   const [songs] = useState(SONGS_LIST);
@@ -40,16 +43,6 @@ export const MusicPlayer = () => {
 
   const getPlayer = () => {
     return document.getElementById(AUDIO_PLAYER_ID)!;
-  };
-
-  const play = () => {
-    // @ts-ignore
-    getPlayer().play();
-  };
-
-  const stop = () => {
-    // @ts-ignore
-    getPlayer().stop();
   };
 
   const playFromStart = (index: number) => {
@@ -80,9 +73,16 @@ export const MusicPlayer = () => {
         src={songs[currentPlay].file}
         onEnded={onEnded}
       />
-      <button onClick={() => playFromStart(2)}>Play 3-rd song</button>
-      <button onClick={() => play()}>continue play</button>
-      <button onClick={() => stop()}>stop play</button>
+      <div className={"song-list"}>
+        {songs.map((song, index) => (
+          <SongControlLine
+            key={"song-line-" + index}
+            order={index + 1}
+            title={song.name}
+            duration={song.time}
+          />
+        ))}
+      </div>
     </>
   );
 };

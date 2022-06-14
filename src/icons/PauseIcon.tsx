@@ -4,10 +4,10 @@ type Props = {
   onClick?: () => void;
 };
 
-export const BurgerMenuIcon = (props: Props) => {
+export const PauseIcon = (props: Props) => {
   return (
     <div onClick={props.onClick} style={{ cursor: "pointer" }}>
-      <i className={"fa fa-bars fa-2x"} />
+      <i className={"fa fa-pause fa-2x"} />
     </div>
   );
 };

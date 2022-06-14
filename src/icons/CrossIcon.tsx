@@ -1,5 +1,4 @@
 import React from "react";
-import "./CrossIcon.css";
 
 type Props = {
   onClick?: () => void;
@@ -7,10 +6,8 @@ type Props = {
 
 export const CrossIcon = (props: Props) => {
   return (
-    <div className={"cross"} onClick={props.onClick}>
-      <span className={"main-line"}>
-        <span className={"additional-lines"}>Close menu</span>
-      </span>
+    <div onClick={props.onClick} style={{ cursor: "pointer" }}>
+      <i className={"fa fa-times fa-2x"} />
     </div>
   );
 };

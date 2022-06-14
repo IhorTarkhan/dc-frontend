@@ -1,0 +1,35 @@
+.song-control-line {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 1px;
+  font-size: 14px;
+}
+
+.song-control-line:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.song-control-line .order {
+  margin: 25px;
+}
+
+.song-control-line .song-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.song-control-line .song-title {
+  font-weight: 700;
+}
+
+.song-control-line .song-description {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .song-control-line {
+    font-size: 18px;
+  }
+}

@@ -6,6 +6,7 @@ import { Footer } from "./footer/Footer";
 import { NewAlbum } from "./new-album/NewAlbum";
 import { AboutUs } from "./about-us/AboutUs";
 import { Videos } from "./videos/Videos";
+import { Blog } from "./blog/Blog";
 
 export const App = () => {
   return (
@@ -20,7 +21,7 @@ export const App = () => {
       <Line2 />
       <Videos />
       <Line2 />
-      images
+      <Blog />
       <Line1 />
       <Footer />
     </>

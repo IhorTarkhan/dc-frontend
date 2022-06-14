@@ -6,14 +6,14 @@
 
 .order-wrapper .general {
   display: flex;
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   align-items: center;
   justify-content: center;
 }
 
 .order-wrapper .icon {
-  margin-left: -70px;
+  margin-left: -50px;
   opacity: 0;
 }
 
@@ -32,3 +32,16 @@
 .order-wrapper:hover .order {
   opacity: 0;
 }
+
+/*TODO*/
+
+/*@media (min-width: 768px) {*/
+/*  .order-wrapper .general {*/
+/*    height: 70px;*/
+/*    width: 70px;*/
+/*  }*/
+
+/*  .order-wrapper .icon {*/
+/*    margin-left: -70px;*/
+/*  }*/
+/*}*/

@@ -40,13 +40,39 @@ export const MusicPlayer = () => {
   const AUDIO_PLAYER_ID = "audio-player";
   const [songs] = useState(SONGS_LIST);
   const [currentPlay, setCurrentPlay] = useState<number>(0);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
   const getPlayer = () => {
     return document.getElementById(AUDIO_PLAYER_ID)!;
   };
 
+  const handlePlay = () => {
+    setIsPlaying(true);
+  };
+
+  const handlePause = () => {
+    setIsPlaying(false);
+  };
+
+  const play = (index: number) => {
+    setIsPlaying(true);
+    if (index === currentPlay) {
+      // @ts-ignore
+      getPlayer().play();
+    } else {
+      playFromStart(index);
+    }
+  };
+
+  const pause = () => {
+    // @ts-ignore
+    getPlayer().pause();
+    setIsPlaying(false);
+  };
+
   const playFromStart = (index: number) => {
     setCurrentPlay(index);
+    setIsPlaying(true);
     const player = getPlayer();
     const source = player.children[0];
     source.setAttribute("src", songs[index].file);
@@ -71,6 +97,8 @@ export const MusicPlayer = () => {
       <AudioPlayer
         id={AUDIO_PLAYER_ID}
         src={songs[currentPlay].file}
+        onPlay={handlePlay}
+        onPause={handlePause}
         onEnded={onEnded}
       />
       <div className={"song-list"}>
@@ -80,6 +108,10 @@ export const MusicPlayer = () => {
             order={index + 1}
             title={song.name}
             duration={song.time}
+            isCurrent={index === currentPlay}
+            isPlaying={isPlaying}
+            handlePlay={() => play(index)}
+            handlePause={pause}
           />
         ))}
       </div>

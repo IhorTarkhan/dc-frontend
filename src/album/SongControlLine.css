@@ -10,8 +10,43 @@
   background: rgba(0, 0, 0, 0.25);
 }
 
-.song-control-line .order {
-  margin: 25px;
+.song-control-line.selected {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.song-control-line .order-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.song-control-line .order-wrapper .order-general {
+  display: flex;
+  height: 70px;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.song-control-line .order-wrapper .icon {
+  margin-left: -70px;
+  opacity: 0;
+}
+
+.song-control-line .order-wrapper .icon {
+  opacity: 0;
+}
+
+.song-control-line .order-wrapper .order {
+  opacity: 1;
+}
+
+.song-control-line .order-wrapper:hover .icon {
+  opacity: 1;
+}
+
+.song-control-line .order-wrapper:hover .order {
+  opacity: 0;
 }
 
 .song-control-line .song-info {

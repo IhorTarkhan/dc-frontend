@@ -7,7 +7,7 @@ type Props = {
 export const PlayIcon = (props: Props) => {
   return (
     <div onClick={props.onClick} style={{ cursor: "pointer" }}>
-      <i className={"fa fa-play fa-2x"} />
+      <i className={"fa fa-play fa-1x"} />
     </div>
   );
 };

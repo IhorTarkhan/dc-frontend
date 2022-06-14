@@ -3,6 +3,8 @@ import React from "react";
 type Props = {
   id: string;
   src: string;
+  onPlay: () => void;
+  onPause: () => void;
   onEnded: () => void;
 };
 
@@ -11,6 +13,8 @@ export const AudioPlayer = (props: Props) => {
     <audio
       id={props.id}
       controls
+      onPlay={props.onPlay}
+      onPause={props.onPause}
       onEnded={props.onEnded}
       style={{ width: "100%" }}
     >

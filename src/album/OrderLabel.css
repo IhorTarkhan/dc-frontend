@@ -1,0 +1,34 @@
+.order-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.order-wrapper .general {
+  display: flex;
+  height: 70px;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-wrapper .icon {
+  margin-left: -70px;
+  opacity: 0;
+}
+
+.order-wrapper .icon {
+  opacity: 0;
+}
+
+.order-wrapper .order {
+  opacity: 1;
+}
+
+.order-wrapper:hover .icon {
+  opacity: 1;
+}
+
+.order-wrapper:hover .order {
+  opacity: 0;
+}

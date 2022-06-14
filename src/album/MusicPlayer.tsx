@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { AudioPlayer } from "./AudioPlayer";
 import "./MusicPlayer.css";
 import { SongControlLine } from "./SongControlLine";
@@ -87,10 +87,6 @@ export const MusicPlayer = () => {
   const onEnded = () => {
     playFromStart((currentPlay + 1) % songs.length);
   };
-
-  useEffect(() => {
-    console.log("currentPlay = " + currentPlay);
-  }, [currentPlay]);
 
   return (
     <>

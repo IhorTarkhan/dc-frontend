@@ -7,6 +7,7 @@ import { NewAlbum } from "./new-album/NewAlbum";
 import { AboutUs } from "./about-us/AboutUs";
 import { Videos } from "./videos/Videos";
 import { Blog } from "./blog/Blog";
+import { Album } from "./album/Album";
 
 export const App = () => {
   return (
@@ -17,9 +18,9 @@ export const App = () => {
       <Line1 />
       <AboutUs />
       <Line2 />
-      album
+      <Album />
       <Line2 />
-      <Videos />
+      {/*<Videos />*/}
       <Line2 />
       <Blog />
       <Line1 />

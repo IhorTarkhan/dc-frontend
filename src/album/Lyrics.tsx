@@ -29,10 +29,7 @@ export const Lyrics = (props: Props) => {
   const [locale, setLocale] = useState<Locale>("en");
 
   return (
-    <div
-      className={"song-lyric-wrapper"}
-      style={{ height: `${props.songs.length * lineHeight}px` }}
-    >
+    <>
       <div className={"locale-wrapper"}>
         {localeList.map((l, index) => (
           <button
@@ -44,8 +41,13 @@ export const Lyrics = (props: Props) => {
           </button>
         ))}
       </div>
-      {/* @ts-ignore */}
-      {localeObject[locale]}
-    </div>
+      <div
+        className={"song-lyric-wrapper"}
+        style={{ height: `${props.songs.length * lineHeight}px` }}
+      >
+        {/* @ts-ignore */}
+        {localeObject[locale]}
+      </div>
+    </>
   );
 };

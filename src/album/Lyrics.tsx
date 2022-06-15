@@ -17,19 +17,35 @@ export const Lyrics = (props: Props) => {
   };
 
   const [lineHeight, setLineHeight] = useState<number>(getLineHeight());
-
   useEffect(() => {
     const update = () => () => setLineHeight(getLineHeight());
     window.addEventListener("resize", update);
     return () => window.removeEventListener("resize", update);
   }, []);
 
+  const localeObject = props.songs[props.selectedSongIndex].locale;
+  const localeList = Object.keys(localeObject);
+  type Locale = typeof localeList[number];
+  const [locale, setLocale] = useState<Locale>("en");
+
   return (
     <div
-      className={"song-lyric"}
+      className={"song-lyric-wrapper"}
       style={{ height: `${props.songs.length * lineHeight}px` }}
     >
-      {props.songs[props.selectedSongIndex].locale.en}
+      <div className={"locale-wrapper"}>
+        {localeList.map((l, index) => (
+          <button
+            key={index}
+            className={locale === l ? "selected" : ""}
+            onClick={() => setLocale(l)}
+          >
+            {l}
+          </button>
+        ))}
+      </div>
+      {/* @ts-ignore */}
+      {localeObject[locale]}
     </div>
   );
 };

@@ -20,7 +20,7 @@ export const App = () => {
       <Line2 />
       <Album />
       <Line2 />
-      {/*<Videos />*/}
+      <Videos />
       <Line2 />
       <Blog />
       <Line1 />

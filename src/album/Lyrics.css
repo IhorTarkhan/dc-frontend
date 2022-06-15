@@ -1,4 +1,4 @@
-.song-lyric {
+.song-lyric-wrapper {
   overflow-y: scroll;
   width: 100%;
   overflow-wrap: break-word;
@@ -6,4 +6,24 @@
   background-color: rgba(0, 0, 0, 0.35);
   font-weight: 300;
   padding: 20px;
+  text-align: justify;
+}
+
+.song-lyric-wrapper .locale-wrapper {
+  float: right;
+  display: flex;
+  gap: 15px;
+}
+
+.song-lyric-wrapper .locale-wrapper button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+}
+
+.song-lyric-wrapper .locale-wrapper button.selected {
+  text-decoration: underline;
 }

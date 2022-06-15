@@ -1,47 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./SongControlLine.css";
-import { OrderLabel } from "./OrderLabel";
+import { ControlButton } from "./ControlButton";
 
 type Props = {
   order: number;
   title: string;
   duration: string;
-  isCurrent: boolean;
+  isSelected: boolean;
   isPlaying: boolean;
-  handlePlay: () => void;
-  handlePause: () => void;
+  onClick: () => void;
 };
 
 export const SongControlLine = (props: Props) => {
-  const [width, setWidth] = useState<number>(window.innerWidth);
-  useEffect(() => {
-    const updateWidth = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", updateWidth);
-    return () => window.removeEventListener("resize", updateWidth);
-  }, []);
-
-  const onRootClick = () => {
-    if (width >= 768) {
-      return undefined;
-    } else {
-      if (props.isCurrent && props.isPlaying) {
-        return props.handlePause;
-      } else {
-        return props.handlePlay;
-      }
-    }
-  };
-
   return (
     <div
-      className={`song-control-line ${props.isCurrent ? "selected" : ""}`}
-      onClick={onRootClick()}
+      className={`song-control-line ${props.isSelected ? "selected" : ""}`}
+      onClick={props.onClick}
     >
-      <OrderLabel
+      <ControlButton
         order={props.order}
-        isPlaying={props.isCurrent && props.isPlaying}
-        handlePlay={props.handlePlay}
-        handlePause={props.handlePause}
+        isSelected={props.isSelected}
+        isPlaying={props.isPlaying}
+        iconClassName={"icon"}
+        numberClassName={"number"}
       />
       <div className={"song-info"}>
         <div className={"song-title"}>{props.title}</div>

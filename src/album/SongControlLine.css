@@ -28,9 +28,24 @@
   font-weight: 300;
 }
 
+.song-control-line .icon {
+  opacity: 0;
+}
+
+.song-control-line .number {
+  opacity: 1;
+}
+
+.song-control-line:hover .icon {
+  opacity: 1;
+}
+
+.song-control-line:hover .number {
+  opacity: 0;
+}
+
 @media (min-width: 768px) {
   .song-control-line {
     font-size: 18px;
-    cursor: auto;
   }
 }

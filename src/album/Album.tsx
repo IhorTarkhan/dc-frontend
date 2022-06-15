@@ -9,7 +9,7 @@ export const Album = () => {
   return (
     <div className={"album"}>
       <div className={"wrapper"}>
-        <img className={"image"} src={logo} alt={"New Album"} />
+        <img className={"image"} src={logo} alt={"Album"} />
       </div>
       <div className={"wrapper"}>
         <MusicServices />

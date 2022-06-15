@@ -1,0 +1,22 @@
+.music-player-switch {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.music-player-switch .buttons {
+  width: 100%;
+  display: flex;
+}
+
+.music-player-switch .buttons .element {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.music-player-switch .line {
+  height: 2px;
+  background: white;
+  transition: 0.25s ease;
+}

@@ -1,0 +1,22 @@
+.order-area {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-area.img {
+  margin-top: -50px;
+}
+
+@media (min-width: 768px) {
+  .order-area {
+    height: 70px;
+    width: 70px;
+  }
+
+  .order-area.img {
+    margin-top: -70px;
+  }
+}

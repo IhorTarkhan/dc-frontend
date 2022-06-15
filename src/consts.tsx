@@ -1,3 +1,5 @@
+export type SongDetails = typeof SONGS_LIST[0];
+
 export const SONGS_LIST = [
   {
     name: "Eleven Light Years",

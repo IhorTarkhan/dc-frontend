@@ -3,6 +3,7 @@ import { AudioPlayer } from "./AudioPlayer";
 import { SONGS_LIST } from "../consts";
 import { MusicPlayerSwitch } from "./MusicPlayerSwitch";
 import { SongsList } from "./SongsList";
+import { Lyrics } from "./Lyrics";
 
 export const MusicPlayer = () => {
   const AUDIO_PLAYER_ID = "audio-player";
@@ -79,24 +80,7 @@ export const MusicPlayer = () => {
     },
     {
       header: { title: "Lyrics" },
-      component: (
-        <div
-          style={{
-            height: `${songs.length * 70 + 20}px`,
-            padding: "10px 0",
-            overflowY: "scroll",
-            width: "100%",
-            overflowWrap: "break-word",
-            whiteSpace: "pre-line",
-            backgroundColor: "rgba(0,0,0,.35)",
-            fontWeight: 300,
-            paddingLeft: 20,
-            paddingRight: 20,
-          }}
-        >
-          {songs[selectedSongIndex].locale.en}
-        </div>
-      ),
+      component: <Lyrics songs={songs} selectedSongIndex={selectedSongIndex} />,
     },
   ];
 

@@ -9,10 +9,9 @@ import { Videos } from "./videos/Videos";
 import { Blog } from "./blog/Blog";
 import { Album } from "./album/Album";
 
-export const App = () => {
+const App = () => {
   return (
     <>
-      {/*<Spinner />*/}
       <Header />
       <NewAlbum />
       <Line1 />
@@ -28,3 +27,5 @@ export const App = () => {
     </>
   );
 };
+
+export default App;
